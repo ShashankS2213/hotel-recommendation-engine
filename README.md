@@ -7,7 +7,8 @@ To develop an intelligent Hotel Recommendation Engine that suggests top hotels b
 **Demo Preview**
 ![alt text](image.png)
 ![alt text](image-1.png)
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/8817fbb1-f635-40ca-a1af-628852644aa3)
+
 
 **Project Architecture**
     
