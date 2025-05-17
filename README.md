@@ -18,6 +18,7 @@ To develop an intelligent Hotel Recommendation Engine that suggests top hotels b
     Recommend --> Display["Show Top 5 Recommendations"]
 
 **Tech Stack**
+
 Frontend -> Streamlit
 
 Backend -> Python, Scikit-learn, Pandas
@@ -27,6 +28,18 @@ Database -> Azure SQL Database, SQLAlchemy, pyodbc
 Modeling -> K-Nearest Neighbors, Custom Preprocessing
 
 Serialization -> joblib (for .pkl files)
+
+**Workflow**
+
+1] Load hotel data & models.
+
+2] User inputs preferences (location, price, rating).
+
+3] Data is preprocessed (categorical encoding, scaling, clustering).
+
+4] KNN model computes nearest hotels (Euclidean distance).
+
+5] Display top 5 recommendations with scores.
 
 **Installation & Usage**
 **1]Clone the Repository**
