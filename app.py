@@ -73,5 +73,5 @@ if st.button("Get Recommendations"):
             - Rating: {hotel['rating']} ({hotel['num_reviews']} reviews)
             - Price Category: {processed_hotel['price_category']}
             - Rating Category: {processed_hotel['rating_category']}
-            - Distance Score: {distance:.2f}
+           
             """)
