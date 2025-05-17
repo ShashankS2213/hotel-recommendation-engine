@@ -43,10 +43,13 @@ Serialization -> joblib (for .pkl files)
 5] Display top 5 recommendations with scores.
 
 **Installation & Usage**
+
 **1]Clone the Repository**
 [git clone https://github.com/yourusername/hotel-recommendation.git]
 cd hotel-recommendation
+
 **2]Install Dependencies**
 pip install -r requirements.txt
-**3]Run the Streamlit App**
+
+**3]Run the Streamlit App in terminal using following command**
 streamlit run app.py
