@@ -19,13 +19,13 @@ To develop an intelligent Hotel Recommendation Engine that suggests top hotels b
 
 **Tech Stack**
 Frontend -> Streamlit
----
+
 Backend -> Python, Scikit-learn, Pandas
----
+
 Database -> Azure SQL Database, SQLAlchemy, pyodbc
----
+
 Modeling -> K-Nearest Neighbors, Custom Preprocessing
----
+
 Serialization -> joblib (for .pkl files)
 
 **Installation & Usage**
