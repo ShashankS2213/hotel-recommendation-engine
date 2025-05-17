@@ -8,14 +8,14 @@ from preprocessor import CustomPreprocessor
 # Load models
 @st.cache_resource
 def load_models():
-    preprocessor = joblib.load('hotel_preprocessor.pkl')
-    knn_model = joblib.load('knn_model.pkl')  # Still loading, no retrain
+    preprocessor = joblib.load('utils/hotel_preprocessor.pkl')  # Local file, no DB
+    knn_model = joblib.load('utils/knn_model.pkl')  # Still loading, no retrain
     return preprocessor, knn_model
 
 # Load offerings data from local pickle
 @st.cache_data
 def load_offerings():
-    df = joblib.load('offerings.pkl')  # Local file, no DB
+    df = joblib.load('utils/offerings.pkl')  # Local file, no DB
     return df
 
 # Load models & data
