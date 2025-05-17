@@ -8,18 +8,18 @@ from preprocessor import CustomPreprocessor
 # Load models
 @st.cache_resource
 def load_models():
-    preprocessor = joblib.load('utils/hotel_preprocessor.pkl')  # Local file, no DB
-    knn_model = joblib.load('utils/knn_model.pkl')  # Still loading, no retrain
+    preprocessor = joblib.load('utils/hotel_preprocessor.pkl')  # Loading preprocessor
+    knn_model = joblib.load('utils/knn_model.pkl') # Loading KNN model
     return preprocessor, knn_model
 
 # Load offerings data from local pickle
 @st.cache_data
 def load_offerings():
-    df = joblib.load('utils/offerings.pkl')  # Local file, no DB
+    df = joblib.load('utils/offerings.pkl')  # Loading offerings data
     return df
 
 # Load models & data
-preprocessor, knn_model = load_models()
+preprocessor, knn_model = load_models() 
 offerings_df = load_offerings()
 
 # Streamlit UI
@@ -28,7 +28,7 @@ st.markdown("Get top 5 hotel recommendations based on your preferences.")
 
 location = st.selectbox("Location", sorted(offerings_df['location'].unique()))
 price = st.slider("Price", 10, 500, 100)
-rating = st.slider("Rating", 0.0, 5.0, 4.0, step=0.1)
+rating = st.slider("Rating", 0.0, 5.0, 4.0, step=0.5)
 num_reviews = st.number_input("Number of Reviews", min_value=0, value=50)
 
 if st.button("Get Recommendations"):

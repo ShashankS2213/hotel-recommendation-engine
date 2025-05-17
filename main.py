@@ -14,7 +14,6 @@ def collect_hotels_rotating():
         "Kolkata", "Goa", "Jaipur", "Agra", "Udaipur",
         "Varanasi", "Rishikesh", "Mysore", "Kochi", "Pune",
         "Shimla", "Manali", "Darjeeling", "Ooty", "Leh",
-        "Jaisalmer", "Alleppey", "Munnar", "Lonavala", "Mahabalipuram"
     ]
 
     sort_options = ["POPULARITY", "RANKING", "DISTANCE", "CHEAPEST"]
@@ -25,7 +24,7 @@ def collect_hotels_rotating():
     for city in indian_cities:
         geo_id = get_geo_id(city)
         if not geo_id:
-            print(f"❌ Geo ID not found for {city}")
+            print(f" Geo ID not found for {city}")
             continue
 
         for check_in in date_variants:
@@ -35,11 +34,11 @@ def collect_hotels_rotating():
                 for page in range(5):  # 5 pages = offsets 0, 30, 60, 90, 120
                     offset = page * 30
 
-                    print(f"📡 Fetching {city} | {check_in}-{check_out} | sort={sort_order} | page={page+1}")
+                    print(f" Fetching {city} | {check_in}-{check_out} | sort={sort_order} | page={page+1}")
                     hotels = get_hotels_for_location(geo_id, check_in, check_out, sort_order, offset)
 
                     if not hotels:
-                        print(f"⚠️ No more hotels found for {city}, breaking page loop.")
+                        print(f" No more hotels found for {city}, breaking page loop.")
                         break
 
                     save_hotels_to_db(hotels, city)
