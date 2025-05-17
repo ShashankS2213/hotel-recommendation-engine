@@ -52,4 +52,4 @@ def save_hotels_to_db(hotels, city):
             session.rollback()
 
     session.commit()
-    print(f"✅ Added {added_count} new hotels for {city}")
+    print(f" Added {added_count} new hotels for {city}")
