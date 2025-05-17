@@ -4,12 +4,6 @@ A Machine Learning-based Hotel Recommendation System that provides personalized 
 **Project Objective**
 To develop an intelligent Hotel Recommendation Engine that suggests top hotels based on user-defined preferences such as location, price, rating, and number of reviews, using machine learning models with a simple, interactive Streamlit UI.
 
-**Demo Preview**
-![alt text](image.png)
-![alt text](image-1.png)
-![image](https://github.com/user-attachments/assets/8817fbb1-f635-40ca-a1af-628852644aa3)
-
-
 **Project Architecture**
     
     UserInput["User Inputs (Location, Price, Rating, Reviews)"] -->|Frontend| StreamlitApp["Streamlit Web App"]
