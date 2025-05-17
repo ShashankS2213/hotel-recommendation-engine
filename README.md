@@ -11,10 +11,15 @@ To develop an intelligent Hotel Recommendation Engine that suggests top hotels b
 
 **Project Architecture**
     UserInput["User Inputs (Location, Price, Rating, Reviews)"] -->|Frontend| StreamlitApp["Streamlit Web App"]
+    
     StreamlitApp --> LoadData["Load Offerings"]
+    
     StreamlitApp --> LoadModels["Load Preprocessor & KNN Model"]
+    
     StreamlitApp --> Preprocess["Preprocess Input & Offerings Data"]
+    
     Preprocess --> Recommend["Compute Similarity (Euclidean Distance)"]
+    
     Recommend --> Display["Show Top 5 Recommendations"]
 
 **Tech Stack**
