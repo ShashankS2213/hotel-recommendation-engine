@@ -10,6 +10,7 @@ To develop an intelligent Hotel Recommendation Engine that suggests top hotels b
 ![alt text](image-2.png)
 
 **Project Architecture**
+    
     UserInput["User Inputs (Location, Price, Rating, Reviews)"] -->|Frontend| StreamlitApp["Streamlit Web App"]
     
     StreamlitApp --> LoadData["Load Offerings"]
